@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Course</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="emedia.css" />
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <!-- Enquiry Modal -->
+    <div
+      class="modal fade"
+      id="enModal"
+      tabindex="-1"
+      aria-labelledby="enModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enModalLabel">Enquire Now</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="bannerForm p-3" action="" method="post">
+              <h3>Book Your Free Class Now!</h3>
+              <p>2 days of free demo classes without paying in advance!</p>
+
+              <div class="mb-3">
+                <label for="enName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="enName"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="enEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="enEmail"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="enPhone" class="form-label">Phone</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="enPhoneAddon">+971</span>
+                  <input
+                    type="tel"
+                    id="enPhone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Phone No."
+                    aria-describedby="enPhoneAddon"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <button type="submit" class="btn w-100">Register Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div
+      class="modal fade"
+      id="bookModal"
+      tabindex="-1"
+      aria-labelledby="bookModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bookModalLabel">
+              Book Your Free Class
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="bannerForm p-3" action="" method="post">
+              <h3>Book Your Free Class Now!</h3>
+              <p>2 days of free demo classes without paying in advance!</p>
+
+              <div class="mb-3">
+                <label for="bookName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="bookName"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="bookPhone" class="form-label">Phone</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="bookPhoneAddon">+971</span>
+                  <input
+                    type="tel"
+                    id="bookPhone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Phone No."
+                    aria-describedby="bookPhoneAddon"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary w-100">
+                  Register Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <header class="container-fluid sticky-top bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-4">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="Site Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-start">
+            <ul class="navbar-nav m-3 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active home" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-outer d-flex gap-3 p-0 justify-content-end">
+            <button class="btn call" aria-label="Call us by phone">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Call Us
+            </button>
+
+            <button
+              class="btn whatsappbtn"
+              aria-label="Call with us on WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat With
+              Us
+            </button>
+          </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="mobileMenu"
+          aria-labelledby="mobileMenuLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">
+              <img src="images/logo.svg" alt="Site Logo" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container-fluid hero-section py-lg-5 py-sm-4 py-3">
+      <div class="container">
+        <div class="row justify-content-between gy-4 align-items-center banner">
+          <div class="col-lg-6">
+            <p class="mt-5 off" style="color: #0ac990">
+              <i
+                class="fa-solid fa-circle-check fa-xl"
+                style="color: #0ac990"
+              ></i>
+              <strong>Get 30% off on first enroll</strong>
+            </p>
+            <div class="banner-content">
+              <h1>
+                Career Opportunities <br />in <span>Digital Marketing</span>
+              </h1>
+              <p>
+                Digital marketing course so good, you only pay-after placement
+              </p>
+
+              <ul class="m-0 p-0">
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i>Specialization:
+                  Performance Marketing
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i>Min salary of Rs 4.5
+                  LPA
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i>50 seats only
+                </li>
+              </ul>
+
+              <div class="bannerContentBtn d-flex gap-3">
+                <button data-bs-toggle="modal" data-bs-target="#bookModal">
+                  Book 2 Days Demo
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="">
+                  <i class="fa-solid fa-download"></i>Download Curriculum
+                </button>
+              </div>
+
+              <div class="bannerContentBtn d-flex gap-5 mt-5">
+                <div class="d-flex gap-3">
+                  <img
+                    alt="Flexible"
+                    loading="lazy"
+                    width="30"
+                    height="30"
+                    decoding="async"
+                    class="smallImage"
+                    src="images/check-circle.svg"
+                    style="color: transparent"
+                  />
+                  <p class="text-sm sm:text-lg font-normal text-black">
+                    Flexible
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <img
+                    alt="Learning Path"
+                    loading="lazy"
+                    width="30"
+                    height="30"
+                    decoding="async"
+                    class="smallImage"
+                    src="images/check-circle.svg"
+                    style="color: transparent"
+                  />
+                  <p class="text-sm sm:text-lg font-normal text-black">
+                    Learning Path
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <img
+                    alt="Community"
+                    loading="lazy"
+                    width="30"
+                    height="30"
+                    decoding="async"
+                    class="smallImage"
+                    src="images/check-circle.svg"
+                    style="color: transparent"
+                  />
+                  <p class="text-sm sm:text-lg font-normal text-black">
+                    Community
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-0">
+            <div class="row digitalImg">
+              <img
+                src="images/digital.png"
+                alt="Digital Marketing Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow-lg counterSection">
+        <div class="row row-cols-lg-5 row-cols-md-2 row-cols-2 p-4 counter">
+          <div class="col">
+            <h2>1000+</h2>
+            <p>Students trained</p>
+          </div>
+          <div class="col">
+            <h2>4.25 LPA</h2>
+            <p>Average Salary</p>
+          </div>
+          <div class="col">
+            <h2>320+</h2>
+            <p>Recruiting Partners</p>
+          </div>
+          <div class="col">
+            <h2>10:00</h2>
+            <p>Program Timings</p>
+          </div>
+          <div class="col">
+            <h2>11th May</h2>
+            <p>Next Batch Starts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="container-fluid highlight-section py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2>Key Highlights of the Course</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati neque alias ut qui consectetur quia!
+            </p>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <!-- Repeated highlight items -->
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="file box"
+                src="images/file.svg"
+                style="height: 90px"
+                alt="Assignments Icon"
+              />
+              <div>
+                <h4>Assignments & <br />Modules tests</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="star box"
+                src="images/star.svg"
+                style="height: 90px"
+                alt="Certification Icon"
+              />
+              <div>
+                <h4>Industry-recognized<br />Certification</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="play box"
+                src="images/play.svg"
+                style="height: 90px"
+                alt="Classes Icon"
+              />
+              <div>
+                <h4>Live Classes & <br />Recorded Lectures</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="download box"
+                src="images/download.svg"
+                style="height: 90px"
+                alt="Download Icon"
+              />
+              <div>
+                <h4>Downloadable<br />Content</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="file box"
+                src="images/project.svg"
+                style="height: 90px"
+                alt="Projects Icon"
+              />
+              <div>
+                <h4>6 Industry Level <br />Projects</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlight-items"
+            >
+              <img
+                class="msg box"
+                src="images/comment.svg"
+                style="height: 90px"
+                alt="Doubt Clearing Session Icon"
+              />
+              <div>
+                <h4>4 Live Doubt Clearing<br />Session</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <button class="bookbtn" type="button" data-bs-toggle="modal" data-bs-target="#enModal">Book Free Class</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- card slider -->
+
+    <section class="container-fluid slide">
+      <div class="container py-5">
+        <h2 class="course">Our Popular Courses.</h2>
+        <div
+          id="cardCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="6000"
+        >
+          <div class="carousel-inner py-5">
+            <!-- First Slide (active) -->
+            <div class="carousel-item active">
+              <div class="row mb-3 justify-content-center">
+                <div class="col-md-4">
+                  <div class="card one">
+                    <img
+                      src="images/hr.png"
+                      class="card-img-top"
+                      alt="Card 1"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">HR Management</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card two">
+                    <img
+                      src="images/coder.png"
+                      class="card-img-top"
+                      alt="Card 2"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">Full-Stack Developer</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card three">
+                    <img
+                      src="images/cyber.png"
+                      class="card-img-top"
+                      alt="Card 3"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">CyberSecurity</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add more .col-md-4 here for more cards per slide -->
+              </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row mb-3 justify-content-center">
+                <div class="col-md-4">
+                  <div class="card four">
+                    <img
+                      src="images/ai.png"
+                      class="card-img-top"
+                      alt="Card 4"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">Artificial Intelligence</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card five">
+                    <img
+                      src="images/software.png"
+                      style="width: auto; height: 230px"
+                      class="card-img-top"
+                      alt="Card 5"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">DevOps Engineer</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card six">
+                    <img
+                      src="images/marketing.png"
+                      class="card-img-top"
+                      alt="Card 6"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">Digital Marketing</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <a href="#" class="btn">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- More cards... -->
+              </div>
+            </div>
+            <!-- Add more .carousel-item as needed! -->
+          </div>
+          <!-- Controls -->
+          <!-- <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews slider -->
+    <section class="container-fluid slide" id="reviews">
+      <div class="container py-5">
+        <h2 class="course">From the E-Learning community</h2>
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner py-5" id="reviewCards">
+            <!-- First Slide (active) -->
+            <div class="carousel-item active">
+              <div class="row mb-3 justify-content-center">
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/girl1.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “From taking courses on e-learning, I gained a deep
+                      understanding of the UX Design process from start to
+                      finish. With the knowledge I gained, I feel prepared for
+                      entry-level jobs and internships.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/man.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “I really enjoyed my courses. The quizzes, videos, and
+                      quick labs provided helpful hands-on experience.
+                      E-Learning has given me the confidence and ability to
+                      excel in my career. I love this feeling.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/girl2.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “I really enjoyed my courses. The quizzes, videos, and
+                      quick labs provided helpful hands-on experience.
+                      E-Learning has given me the confidence and ability to
+                      excel in my career. I love this feeling.”
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Add more .col-md-4 here for more cards per slide -->
+              </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row mb-3 justify-content-center">
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/girl3.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “I really enjoyed my courses. The quizzes, videos, and
+                      quick labs provided helpful hands-on experience.
+                      E-Learning has given me the confidence and ability to
+                      excel in my career. I love this feeling.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/man2.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “I really enjoyed my courses. The quizzes, videos, and
+                      quick labs provided helpful hands-on experience.
+                      E-Learning has given me the confidence and ability to
+                      excel in my career. I love this feeling.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="card review-card shadow-sm mb-4 p-3"
+                    style="max-width: 400px"
+                  >
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/man2.png"
+                        class="rounded-circle me-3 reviewer-img"
+                        alt="Reviewer photo"
+                        width="48"
+                        height="48"
+                      />
+                      <div>
+                        <span class="reviewer-name fw-bold">Reviewer Name</span
+                        ><br />
+                        <span class="review-rating">
+                          <span class="rating-value">4.7</span>
+                          <span class="stars">
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star text-success"></i>
+                            <i class="fa fa-star-half-alt text-success"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <p class="review-text mb-0">
+                      “I really enjoyed my courses. The quizzes, videos, and
+                      quick labs provided helpful hands-on experience.
+                      E-Learning has given me the confidence and ability to
+                      excel in my career. I love this feeling.”
+                    </p>
+                  </div>
+                </div>
+
+                <!-- More cards... -->
+              </div>
+            </div>
+            <!-- Add more .carousel-item as needed! -->
+          </div>
+          <!-- Controls -->
+          <!-- <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="container-fluid newsletter-section py-5">
+      <div class="container px-4 newsletter">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 ">
+            <h2>Newsletter.</h2>
+            <p>
+              Subscribe our newsletter for discounts,<br />promo and many more.
+            </p>
+            <div class="input-wrapper">
+              <input
+                class="input-text"
+                type="email"
+                placeholder="Enter your email address"
+                required
+              /><br />
+              <button class="btn mt-3 fa-beat" id="subscribe">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="container footer-container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-12 py-3 m-3">
+            <h3 class="text-center">Follow Us.</h3>
+            <div class="socials-icons text-center my-4">
+              <a href="#" icon-color = "#1877f2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" icon-color = "#f7f7f8" ><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" icon-color = "#e1306c"><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" icon-color = "#0a66c2"><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" icon-color = "#ff0000"><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid footer-content">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <img src="images/logo.svg" alt="" />
+
+              <p>
+                E-Learning is a leading platform for online education, offering
+                a wide range of courses to help you achieve your career goals.
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 quick-links">
+              <ul class="list-unstyled footer-nav">
+                <h3>Links</h3>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 contact-info">
+              <p><i class="fa-solid fa-envelope" style="color: #6556ff;"></i> info@yourmail.com</p>
+              <p><i class="fa-solid fa-location-dot" style="color: #6556ff;"></i> 123 Street Cali, USA</p>
+              <p class="phone"><i class="fa-solid fa-phone" style="color: #6556ff;"></i> +971 056 567 890</p>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex justify-content-center text-center mt-3">
+              <a href="#" class="legal">Copyrigh ©2025 All rights reserved</a>
+              <a href="#" class="legal">Privacy Policy</a>
+              <a href="#" class="legal">Terms & Conditions</a>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

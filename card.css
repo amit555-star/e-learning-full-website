@@ -1,0 +1,212 @@
+* {
+  /* Consider adding box-sizing for consistency */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #f7faff;
+}
+
+.course {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.card img {
+  overflow: hidden;
+}
+
+.slide {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7faff;
+}
+
+.card-body h3 {
+  font-weight: 700;
+}
+
+.card-body p {
+  font-weight: 500;
+}
+
+.card-body a {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #3f2b96, #0acefe);
+}
+
+/* Another card reviews*/
+
+#reviews {
+  background-color: #d5effa;
+}
+
+#reviewCards {
+  background-color: #d5effa;
+}
+
+.review-card {
+  background: #f7faff; 
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+}
+.review-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.reviewer-img {
+  object-fit: cover;
+  border: 2px solid #e6e6e6;
+}
+
+.reviewer-name {
+  color: #1368ce;
+  font-size: 1.15rem;
+}
+
+.review-rating .stars i {
+  font-size: 1.1rem;
+  margin-right: 2px;
+  vertical-align: middle;
+  color: #27ae60;
+}
+.rating-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-right: 4px;
+}
+.review-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+@media (max-width: 576px) {
+  .review-card {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+}
+
+/*--- NewsLetter----*/
+.newsletter-section{
+  background-color: #f7faff;
+}
+
+.newsletter {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a8ddc, #30cfd0);
+  padding: 80px 20px;
+  border-radius: 20px;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fff;
+  text-align: center;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+.newsletter input[type="email"] {
+  padding: 20px 30px;
+  width: 70%;
+  max-width: 500px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+ #subscribe{
+    background-color: #0acefe;
+    border-radius: 15px;
+ }
+
+/*footer*/
+footer{
+  background: linear-gradient(#d5effa,#30cfd0);
+  font-family: "Poppins", sans-serif;
+}
+
+footer h3{
+  font-weight: 500;
+}
+
+footer p{
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.footer-content li a{
+  font-weight: 500;
+  opacity: 0.6;
+}
+.socials-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.socials-icons a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.socials-icons a i{
+  font-size: 2.5rem;
+}
+
+.footer-content .quick-links .footer-nav {
+  text-align: left;        /* Align list items left */
+  display: inline-block;   /* Keep the list compact on the left */
+  margin: 0;
+  padding: 0;
+}
+
+
+ 
+.footer-content .quick-links .footer-nav li {
+  margin-bottom: 5px;
+}
+
+.footer-content .quick-links .footer-nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-bottom a{
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  opacity:  0.6;
+}
+
+
+

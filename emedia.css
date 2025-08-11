@@ -1,0 +1,123 @@
+/* ===========================
+   Mobile Styles (200-575px)
+   =========================== */
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+
+  /* Fixed action buttons at the bottom of view */
+  .btn-outer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0;
+    justify-content: center !important;
+    z-index: 1050;
+  }
+
+  .whatsappbtn,
+  .call {
+    padding: 7px 15px;
+    font-size: 14px;   /* Changed from font: 14px; */
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: start;
+    line-height: 40px;
+  }
+
+  .banner-content br {
+    display: none;
+  }
+
+  .banner-content p,
+  .banner-content ul li {
+    font-size: 16px;
+  }
+
+  .bannerContentBtn {
+    flex-direction: column;
+  }
+
+  .bannerContentBtn button {
+    width: 100%;
+    margin-bottom: 10px; /* Optional for spacing between buttons */
+  }
+
+  .bannerForm {
+    padding: 20px;
+  }
+
+  .highlight-section h2 {
+    font-size: 28px;
+  }
+
+  .bookbtn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .banner {
+    margin: auto;
+  }
+  
+  /*News letter */
+
+  .newsletter {
+    padding: 40px 15px;
+    border-radius: 0;
+    width: 90%;
+    clip-path: none;
+    text-align: center;
+  }
+
+  .newsletter h2 {
+    margin-top: 35px;
+    font-size: 1.2rem;
+  }
+
+  .newsletter p {
+    font-size: 0.95rem;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    margin-top: 15px;
+    border-radius: 30px;
+  }
+
+  .input-wrapper {
+    width: 100% !important;
+  }
+
+  .input-wrapper i {
+    left: 15px;
+    font-size: 1rem;
+  }
+
+  .input-wrapper input {
+    padding-left: 45px;
+  }
+
+  #subscribe{
+    width: 40%;
+}
+}
+
+/* ==============================
+   Containers on Large Screens
+   ============================== */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1170px;
+  }
+}

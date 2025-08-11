@@ -1,0 +1,259 @@
+/* ================== Base Styles ================== */
+
+* {
+  /* Consider adding box-sizing for consistency */
+  box-sizing: border-box;
+}
+
+/* ================== Navbar ================== */
+
+.navbar-nav {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.nav-item a {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Nav Link Underline Animation */
+.nav-link {
+  display: inline-block;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  height: 5px;
+  width: 0;
+  background-color: #0acefe;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 50%;
+}
+
+/* Active navbar link (secondary selector for specific navbar, optional) */
+#navbarNav ul li a {
+  font-weight: bold;
+  margin: 15px;
+  color: #0acefe;
+}
+
+/* Offcanvas-specific list */
+.off {
+  list-style-type: none;
+}
+
+/* ================== Buttons ================== */
+
+.whatsappbtn {
+  border: 1px solid #27ae60;
+  padding: 10px 18px;
+  color: white;
+  font-size: 20px;
+  border-radius: 40px;
+  background: none;
+}
+
+.whatsappbtn  {
+  background-color: #0fce5f;
+}
+
+.whatsappbtn:hover{
+  background-color: #0fce5f;
+  color: #333;
+}
+
+.call {
+  background: linear-gradient(to right, #0acefe, #2699fb);
+  padding: 10px 18px;
+  color: white;
+  font-size: 20px;
+  border-radius: 40px;
+  border: none;
+}
+
+/* Book Button */
+.bookbtn {
+  border: none;
+  background: linear-gradient(to right, #0acefe, #2699fb);
+  color: white;
+  padding: 15px 0;
+  border-radius: 5px;
+  width: 20%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Banner section buttons */
+.bannerContentBtn button {
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.bannerContentBtn button:first-child {
+  color: white;
+  background: linear-gradient(to right, #0acefe, #2699fb);
+}
+
+/* ================== Hero Section ================== */
+
+.hero-section {
+  background-color: #f7faff;
+}
+
+
+.banner-content h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.banner-content h1 span {
+  background: linear-gradient(to right, #0acefe, #2699fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.banner-content p,
+.banner-content ul li {
+  font-size: 22px;
+}
+
+.banner-content ul {
+  list-style: none;
+}
+
+.banner-content ul li i {
+  color: #2699fb;
+}
+
+/* ================== Forms ================== */
+
+.bannerForm {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.bannerForm h3 {
+  font-size: 18px;
+}
+
+.bannerForm button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, #0acefe, #2699fb);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* ================== Counters ================== */
+
+.counterSection h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2699fb;
+}
+
+.counter {
+  margin-top: 115px;
+}
+
+/* ================== Highlight Section ================== */
+
+.highlight-section {
+  background-color: #f7faff;
+}
+
+.highlight-section h2 {
+  color: #0a2134;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.highlight-section p {
+  font-size: 18px;
+}
+
+.highlight-items h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.highlight-items p {
+  font-size: 15px;
+}
+
+/* Highlight Icons/Boxes */
+.box {
+  border-radius: 10px;
+  padding: 10px;
+}
+.file {
+  background-color: rgba(161, 221, 236, 0.2);
+}
+.star {
+  background-color: rgba(248, 180, 113, 0.2);
+}
+.play {
+  background-color: rgba(228, 164, 238, 0.2);
+}
+.download {
+  background-color: rgba(161, 237, 149, 0.2);
+}
+.msg {
+  background-color: rgba(244, 221, 158, 0.553);
+}
+
+/* ================== Tabs ================== */
+
+.tabItems-content ul {
+  list-style-type: none;
+}
+
+.myTabs .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: white;
+  color: #0a2134;
+  border-radius: 0;
+}
+
+.myTabs li button {
+  font-size: 18px;
+  color: #0a2134;
+}
+
+/* ================== slider ================== */
+
+.carousel .card {
+  margin: 0 10px;
+}
+.carousel .row {
+  justify-content: center;
+}
+
+
+
+/* ================== Suggestions & Notes ================== */
+
+/*
+- Consider grouping by section (navbar, hero, forms, etc.) for easier navigation.
+- You have a typo in one of your selectors: ".baner-content ul li i" likely should be ".banner-content ul li i".
+- The base * selector is currently empty; "box-sizing: border-box;" is recommended.
+- Ensure consistent use of units (e.g., px, rem).
+- If this CSS grows, consider separating these into component-based files (navbar.css, banner.css, etc.).
+*/
+
