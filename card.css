@@ -4,13 +4,14 @@
   margin: 0;
   padding: 0;
 }
-
+/* Course slide card */
 .card {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease;
   overflow: hidden;
   border-radius: 15px;
   background-color: #f7faff;
+  
 }
 
 .course {
@@ -47,7 +48,7 @@
   background: linear-gradient(to right, #3f2b96, #0acefe);
 }
 
-/* Another card reviews*/
+/* Another card reviews slider */
 
 #reviews {
   background-color: #d5effa;
@@ -99,6 +100,12 @@
     max-width: 95vw;
     padding: 1rem;
   }
+
+  .course-card {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+ 
 }
 
 /*--- NewsLetter----*/
@@ -115,7 +122,7 @@
   color: #fff;
   text-align: center;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .newsletter h2 {
@@ -147,7 +154,7 @@
  }
 
 /*footer*/
-footer{
+.footer-section{
   background: linear-gradient(#d5effa,#30cfd0);
   font-family: "Poppins", sans-serif;
 }
@@ -183,11 +190,13 @@ footer p{
   font-size: 2.5rem;
 }
 
+
 .footer-content .quick-links .footer-nav {
   text-align: left;        /* Align list items left */
   display: inline-block;   /* Keep the list compact on the left */
   margin: 0;
   padding: 0;
+  
 }
 
 

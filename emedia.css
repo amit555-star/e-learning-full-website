@@ -61,6 +61,10 @@
   .banner {
     margin: auto;
   }
+
+  .slide {
+    gap: 50px;
+  }
   
   /*News letter */
 
