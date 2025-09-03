@@ -1,6 +1,5 @@
-/* ===========================
-   Mobile Styles (200-575px)
-   =========================== */
+/* Mobile Styles (200-575px) */
+
 @media only screen and (min-width: 200px) and (max-width: 575px) {
 
   /* Fixed action buttons at the bottom of view */
@@ -108,9 +107,7 @@
 }
 }
 
-/* ==============================
-   Containers on Large Screens
-   ============================== */
+/* Containers on Large Screens */
 @media (min-width: 1400px) {
   .container,
   .container-lg,

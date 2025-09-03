@@ -1,16 +1,19 @@
-/* ================== Base Styles ================== */
 
 * {
-  /* Consider adding box-sizing for consistency */
   box-sizing: border-box;
 }
 
 /* ================== Navbar ================== */
 
+.container-fluid{
+  box-shadow: 0 1px 5px rgba(223, 222, 222, 0.5);
+}
+
 .navbar-nav {
   font-size: 20px;
   font-weight: 500;
   color: #000;
+  
 }
 
 .nav-item a {
@@ -40,7 +43,7 @@
   width: 50%;
 }
 
-/* Active navbar link (secondary selector for specific navbar, optional) */
+/* Active navbar link  */
 #navbarNav ul li a {
   font-weight: bold;
   margin: 15px;
@@ -245,15 +248,4 @@
   justify-content: center;
 }
 
-
-
-/* ================== Suggestions & Notes ================== */
-
-/*
-- Consider grouping by section (navbar, hero, forms, etc.) for easier navigation.
-- You have a typo in one of your selectors: ".baner-content ul li i" likely should be ".banner-content ul li i".
-- The base * selector is currently empty; "box-sizing: border-box;" is recommended.
-- Ensure consistent use of units (e.g., px, rem).
-- If this CSS grows, consider separating these into component-based files (navbar.css, banner.css, etc.).
-*/
 
